@@ -6764,8 +6764,47 @@ button.close {
     display: none !important;
   }
 }
-h1 {
-  color: red;
-  font-style: oblique;
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+body {
+  width: 100%;
+  height: 648px;
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #f6f6f6;
+}
+#topnav {
+  height: 100px;
+  width: 1049px;
+  margin: 0 auto;
+  border: solid red 1px;
+}
+#topnav .signUp {
+  height: 100px;
+  width: 270px;
+  float: right;
+}
+#pageContainer {
+  max-width: 920px;
+  margin: 0 auto;
+  height: auto;
+  border: solid grey 1px;
+}
+#pageContainer #textHeader {
+  height: 330px;
+  width: 100%;
+  border: solid green 1px;
+}
+#pageContainer .personalInfo {
+  margin: 0 auto;
+  height: 270px;
+  max-width: 920px;
+  border: solid grey 1px;
+  background-color: white;
 }
 /*# sourceMappingURL=bootstrap.css.map */
