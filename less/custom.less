@@ -1,6 +1,39 @@
-h1, h2, h3 { text-align: center}
 
-body{
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold-webfont.eot') format("embedded-opentype"),
+         url('../fonts/OpenSans-Bold.woff') format("woff"),
+         url('../fonts/OpenSans-light.woff') format("woff"),
+         url('../fonts/OpenSans-Bold.ttf') format("truetype"),
+         url('../fonts/OpenSans-light.ttf') format("truetype"),
+}
+
+h1,{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'OpenSans-Bold', Fallback, sans-serif;
+}
+
+h2,{
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    font-family: 'OpenSans-Bold', Fallback, sans-serif;
+}
+h3 {
+    font-size: 2.3em;
+    text-align: center;
+    font-family: 'OpenSans-light', Fallback, sans-serif;
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+}
+
+#backgroundImage{
+    position: absolute;
+    top:0;
+    left:0;
     width: 100%;
     height: 648px;
     background-image: url(../img/hero.jpg);
@@ -8,14 +41,17 @@ body{
     background-size: cover;
     background-position: center;
     background-color: #f6f6f6;
+    z-index: 1;
 }
-
 
 #topnav{
     height: 100px;
     width: 1049px;
     margin: 0 auto;
     border: solid red 1px;
+    position: relative;
+    z-index: 2;
+
 
     .signUp{
         height:  100px;
@@ -24,21 +60,25 @@ body{
     }
 
     .citys{
-        height: 100px
-        width: 200px
+        height: 100px;
+        width: 200px;
     }
 }
 
 #pageContainer{
     max-width: 920px;
     margin: 0 auto;
-    height: auto;
+    min-height: 1200px;
     border: solid grey 1px;
+    position: relative;
+    z-index: 2;
+
 
     #textHeader{
-    height: 330px;
+        height: 330px;
         width: 100%;
         border: solid green 1px;
+        padding-top: 61px;
     }
     .personalInfo{
         margin: 0 auto;
@@ -46,11 +86,32 @@ body{
         max-width: 920px;
         border: solid grey 1px;
         background-color: white;
+        text-align: center;
          .personalSub p{
             text-align: center;
+         }
+         .formDetails{
+            max-width: 600px;
+//            border: solid;
+            input{
+                width: 100%;
+                height: 50px;
+                margin: 10px 0;
+                border-radius: .5em;
+                border: solid #dddddd 1px;
+                padding-left: 1.2em;
+                font-size: 16px;
+                font-weight: 300;
+             }
+             input[type="submit"]{
+                margin-top: 50px;
+                 width: 145px;
+             }
          }
     }
 
 
 
 }//#pageContainer
+
+
